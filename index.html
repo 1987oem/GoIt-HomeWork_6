@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW_6</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+       <div class="header">
+           <img class="header__icon" src="img/%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F-%D1%82%D1%80%D1%83%D0%B1%D0%BE%D1%87%D0%BA%D0%B0.png" alt="">
+           <p class="header__tel">
+           (044)123-45-67  (044)567-89-10
+           </p>
+        <form class="registered__form" action="process.php">
+             <fieldset class="registered__form fieldset">
+                <p class="registered__icon"><img src="img/%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.png" alt=""></p>
+                <input class="registered__form_log" name="user-name" type="email" placeholder="логин" required autofocus>
+                <input class="registered__form_pass"  name="password" type="password" placeholder="пароль" required>
+                <input class="registered__form_enter" name="login" type="submit" value="вход">
+                <span class="registered__form_span">|</span>
+                <a class="registered__form_registration" href="#">регистрация</a>
+                <a class="registered__form_forgotpass" href="#">забыли пароль?</a>
+            </fieldset>
+       </form>
+        <nav class="navigation">
+                <ul class="navigation__list">
+                <li class="navigation__list li"><a href="index.html"><p><img src="img/%D0%B4%D0%BE%D0%BC%D0%BE%D0%B9.png" alt=""></p></a></li>
+                <li class="navigation__list li"><a href="#"><p><img src="img/%D0%BA%D0%B0%D1%80%D1%82%D0%B0-%D1%81%D0%B0%D0%B9%D1%82%D0%B0.png" alt=""></p></a></li>
+                <li class="navigation__list li"><a href="#"><p><img src="img/%D0%9F%D0%B8%D1%81%D1%8C%D0%BC%D0%BE.png" alt=""></p></a></li>
+                </ul>
+           </nav>                      
+       </div>
+       <div class="logo"></div>
+       <nav class="menu">
+           <ul class="menu__list">
+               <li class="menu__item"><a class="menu__link link1" href="#">О КОМПАНИ</a></li>
+               <li class="menu__item"><a class="menu__link link2" href="#">ОПЛАТА</a></li>
+               <li class="menu__item"><a class="menu__link link3" href="#">ДОСТАВКА</a></li>
+               <li class="menu__item"><a class="menu__link link4" href="#">СТАТЬИ</a></li>
+               <li class="menu__item"><a class="menu__link link5" href="#">КОНТАКТЫ</a></li>
+               <p><img class="menu__item shop-cart" src="img/Layer-15.png" alt=""></p>
+               <p class="menu__item products">товаров:</p>
+               <p><img class="menu__item quantity" src="img/0.png" alt=""></p>
+               <p class="menu__item summa">на сумму:</p>
+               <p><img class="menu__item cash" src="img/0,00-%D0%B3%D1%80%D0%BD.png" alt=""></p>
+           </ul>
+       </nav>
+       <section class="auto__search">
+            <h2 class="auto__header">Поиск по автомобилю</h2>
+            <p class="auto__title disc">Диски:</p>
+            <p class="auto__title tire">Шины:</p>
+            <label class="auto__labels brend" for="Brend">Марка <span class="marker">авто:</span></label>
+            <select id="Brend" class="auto__select brends" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <label class="auto__labels model" for="Model">Модель <span class="marker">автомобиля:</span></label>
+            <select id="Model" class="auto__select models" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <label class="auto__labels release" for="Year">Год выпуска <span class="marker">автомобиля:</span></label>
+            <select id="Year" class="auto__select years" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <label class="auto__labels equipment" for="Equipment">Комплектация:</label>
+            <select id="Equipment" class="auto__select equipments" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            
+            <label class="auto__labels2 brend" for="Brend">Марка <span class="marker">авто:</span></label>
+            <select id="Brend2" class="auto__select2 brends" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <label class="auto__labels2 model" for="Model">Модель <span class="marker">автомобиля:</span></label>
+            <select id="Model2" class="auto__select2 models" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <label class="auto__labels2 release" for="Year">Год выпуска <span class="marker">автомобиля:</span></label>
+            <select id="Year" class="auto__select2 years2" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <label class="auto__labels2 equipment" for="Equipment">Комплектация:</label>
+            <select id="Equipment" class="auto__select2 equipments" name="title">
+                <option value="" selected></option>
+                <option value=""></option>
+            </select>
+            <a href="#" class="auto__search_button">поиск...</a>
+       </section>
+       <aside class="catalog">
+             <p class="catalog__header"><img class="catalog__icon" src="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png" alt="">КАТАЛОГ ПРОДУКЦИИ:</p>
+               <ul class="catalog__item" >
+                  <p class="catalog__header title"><img class="catalog__icon icon2" src="img/Shape-13%20copy%2014.png" alt="">ШИНЫ:</p> 
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 1</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 2</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 3</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 4</a></li>
+               </ul>
+               <ul class="catalog__item item2" >
+                  <p class="catalog__header title2"><img class="catalog__icon icon2" src="img/Shape-13%20copy%2014.png" alt="">ДИСКИ:</p> 
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 1</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 2</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 3</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 4</a></li>
+               </ul>
+               <ul class="catalog__item item3" >
+                  <p class="catalog__header title3"><img class="catalog__icon icon3" src="img/Shape-13%20copy%2014.png" alt="">БОЛТЫ:</p> 
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 1</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 2</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 3</a></li>
+                   <li class="catalog__list"><a class="catalog__link" href="#">Наименование 4</a></li>
+               </ul>
+               
+       </aside>
+       <main class="content">
+        <section class="content__line">
+          <figure class="content__part">
+            <figcaption class="content__part name">Goodyear</figcaption>
+            <p class="content__part_model mod1">Ultra Grip Extreme</p>
+            <p><img content__part_image src="img/Layer-5.png" alt="" /></p>
+            <figcaption class="content__part price">90.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+           <figure class="content__part">
+            <figcaption class="content__part name2">Nokian</figcaption>
+            <p class="content__part_model mod2">Hakkapeliitta R</p>
+            <p><img content__part_image src="img/Layer-6.png" alt="" /></p>
+            <figcaption class="content__part price2">115.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+           <figure class="content__part">
+            <figcaption class="content__part name3">Hankook</figcaption>
+            <p class="content__part_model mod3">K 708 155/65 R14</p>
+            <p><img content__part_image src="img/Layer-7.png" alt="" /></p>
+            <figcaption class="content__part price3">393.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+        </section>
+        <section class="content__line line2">
+          <figure class="content__part">
+            <figcaption class="content__part name">Goodyear</figcaption>
+            <p class="content__part_model mod1">Ultra Grip Extreme</p>
+            <p><img content__part_image src="img/Layer-5.png" alt="" /></p>
+            <figcaption class="content__part price">90.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+           <figure class="content__part">
+            <figcaption class="content__part name2">Nokian</figcaption>
+            <p class="content__part_model mod2">Hakkapeliitta R</p>
+            <p><img content__part_image src="img/Layer-6.png" alt="" /></p>
+            <figcaption class="content__part price2">115.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+           <figure class="content__part">
+            <figcaption class="content__part name3">Hankook</figcaption>
+            <p class="content__part_model mod3">K 708 155/65 R14</p>
+            <p><img content__part_image src="img/Layer-7.png" alt="" /></p>
+            <figcaption class="content__part price3">393.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+        </section>
+        <section class="content__line line3">
+          <figure class="content__part">
+            <figcaption class="content__part name">Goodyear</figcaption>
+            <p class="content__part_model mod1">Ultra Grip Extreme</p>
+            <p><img content__part_image src="img/Layer-5.png" alt="" /></p>
+            <figcaption class="content__part price">90.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+           <figure class="content__part">
+            <figcaption class="content__part name2">Nokian</figcaption>
+            <p class="content__part_model mod2">Hakkapeliitta R</p>
+            <p><img content__part_image src="img/Layer-6.png" alt="" /></p>
+            <figcaption class="content__part price2">115.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+           <figure class="content__part">
+            <figcaption class="content__part name3">Hankook</figcaption>
+            <p class="content__part_model mod3">K 708 155/65 R14</p>
+            <p><img content__part_image src="img/Layer-7.png" alt="" /></p>
+            <figcaption class="content__part price3">393.00 <span class="content__price value">грн.</span></figcaption>
+           </figure>
+        </section>
+       </main>
+       <div class="partners"></div>
+       <footer class="footer">
+           <nav class="footer__menu">
+               <ul class="footer__list">
+                   <li class="footer__item"><a class="footer__link" href="#">О компании</a></li>
+                   <span class="footer__menu_span">|</span>
+                   <li class="footer__item"><a class="footer__link links" href="#">Доставка</a></li>
+                   <span class="footer__menu_span">|</span>
+                   <li class="footer__item"><a class="footer__link links" href="#">Статьи</a></li>
+                   <span class="footer__menu_span">|</span>
+                   <li class="footer__item contacts"><a class="footer__link links" href="#">Контакты</a></li>
+               </ul>
+           </nav>
+           <p class="globalVision">Создание сайта &copy; Global Vision</p>
+       </footer>
+    </div>
+</body>
+</html>
